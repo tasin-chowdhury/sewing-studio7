@@ -34,3 +34,282 @@
     margin: auto;
 
 }
+
+/* |******************|
+   |   about page     |
+|   ******************| */
+
+/* -------welcome------- */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    padding: 5px;
+    font-family: monospace;
+}
+.welcome .text {
+    font-size: 80px;
+    font-weight: 650;
+}
+.welcome .text2 {
+    font-size: 50px;
+    font-weight: 600;
+    background: linear-gradient(to right, rgb(49, 17, 138), rgb(33, 143, 170));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -----services----- */
+.service {
+    display: flex;
+    margin: 10px 0;
+    font-family: monospace;
+}
+.service a {
+    text-decoration: none;
+}
+.service-make {
+    display: flex;
+    background-color: rgba(87, 201, 209, 0.25);
+    padding: 10px 0;
+}
+.service .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 50px;
+    padding: 2px;
+}
+.service .row .left {
+    width: 35%;
+    padding: 0px 10px;
+}
+.service .row .crop {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 999px;
+}
+.service .row img {
+    width: 900px;
+    height: 450px;
+    margin: 0 -110px 0 -280px;
+}
+.service .row .right {
+    width: 65%;
+    /* padding: 5px 10px 5px 10px; */
+    font-family: monospace;
+}
+.service .row .text1 {
+    font-size: 40px;
+}
+.service .row .text2 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.service-repair{
+    display: flex;
+    background-color: rgba(89, 216, 121, 0.25);
+}
+.service-repair .service .row .right {
+    width: 35%;
+    padding: 0 10px;
+}
+.service-repair .service .row .left {
+    width: 65%;
+}
+.service-repair .service .row .crop {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 999px;
+}
+.service-repair .service .row img {
+    width: 500px;
+    height: 550px;
+    margin: -25px -25px;
+}
+.service-retail {
+    display: flex;
+    background-color: rgba(130, 241, 56, 0.25);
+}
+
+/* ---------button-------- */
+.btn-grad {background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 10px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   font-family: monospace;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+/* --------user review--------- */
+.review {
+    display: flex;
+    margin: 60px 5px 40px 8px;
+    font-family: monospace;
+}
+.review .max-width {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.review .text {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 12px auto 5px 5px;
+}
+.review .max-width .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto 10px;
+}
+.review .max-width .row a {
+    text-decoration: none;
+    color: black;
+}
+.review .box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+}
+.review .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(30, 129, 211) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all 0.5s;
+}
+.review .box2:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 25px rgb(83, 133, 224);
+}
+.review .box2 img {
+    height: 150px;
+    width: 150px;
+    border-radius: 999px;
+}
+.review .box .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 5px;
+    padding: 2px;
+    
+}
+.review .box .left {
+    width: 25%;
+    padding: 0 0 0 5px;
+}
+.review .box .left img {
+    height: 60px;
+    width: 60px;
+    border-radius: 999px;
+}
+.review .box .right {
+    width: 75%;
+    padding: 2px 5px 2px 0;
+}
+.review .box .right .name-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+.review .box .right .email-text {
+    color: rgba(0, 0, 0, 0.6);
+}
+.review .box .right .expr-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+.review .box .right .detail-text {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* ------comment------- */
+.container {
+    width: 100%;
+    font-family: monospace;
+}
+.container .max-width {
+    width: 100%;
+    margin: 0 15% 0 15%;
+}
+.container .title {
+    font-size: 34px;
+}
+.container .title span {
+    color: rgb(74, 122, 228);
+}
+.container .input-box {
+    padding: 0 6px;
+    margin: 0px 6px 2px;
+}
+.container .input-box p {
+    color: red;
+}
+.container .input-box .key {
+    margin: 5px 0;
+}
+.container .input-box .value-box input[type=text] {
+    height: 30px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 16px;
+}
+.container .input-box .value-box textarea {
+    height: 100px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 4px 6px;
+    font-size: 16px;
+}
+
+.container.input-box .value-box label {
+    font-size: 16px;
+    margin: 4px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+.btn a:hover {
+    color: black;
+}
